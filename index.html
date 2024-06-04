@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OUTBOUND DETECTIONS TEAM</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <table cellspacing="0" ; cellpadding="0">
+        <form action="pdf.php" method="post">
+          <tr>
+            <td colspan="2" class="header">
+              <h4>OUTBOUND DETECTIONS TEAM</h4>
+            </td>
+          </tr>
+          <tr>
+            <td class="all-label responsive top-padding">
+              <label for="CARD">CARD#:</label>
+            </td>
+            <td class="responsive top-padding">
+              <input
+                type="text"
+                placeholder="Enter Last 4 Digits"
+                required
+                class="input-data"
+                id="CARD"
+                name="card"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td class="all-label responsive">
+              <label for="card-holder">CARD HOLDER:</label>
+            </td>
+            <td class="responsive">
+              <input
+                type="text"
+                placeholder="Enter Card Holder Name"
+                required
+                class="input-data"
+                id="card-holder"
+                name="c_holder"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td class="all-label responsive bottom-padding">
+              <label for="n-contacted">NUMBER CONTACTED:</label>
+            </td>
+            <td class="responsive bottom-padding">
+              <input
+                type="text"
+                placeholder="Enter Contacted Number"
+                required
+                class="input-data"
+                id="n-contacted"
+                name="number"
+              />
+            </td>
+          </tr>
+          <td colspan="2" class="review">
+            <h5>ACCT REVIEW / DATA CHECK:</h5>
+          </td>
+          <tr>
+            <td class="all-label responsive top-padding">
+              <label for="address">ADDRESS:</label>
+            </td>
+            <td class="responsive top-padding">
+              <div class="select-box">
+                <select id="address" name="address">
+                  <option value="#" hidden>Select Option</option>
+                  <option value="PASS">PASS</option>
+                  <option value="FAIL">FAIL</option>
+                  <option value="NOT FOUND IN MOD">NOT FOUND IN MOD</option>
+                  <option value="NOT FOUND IN ONLINE SEARCH">
+                    NOT FOUND IN ONLINE SEARCH
+                  </option>
+                </select>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="all-label responsive">
+              <label for="phone-number">PHONE NUMBER:</label>
+            </td>
+            <td class="responsive">
+              <div class="select-box">
+                <select id="phone-number" name="p_number">
+                  <option value="#" hidden>Select Option</option>
+                  <option value="PASS">PASS</option>
+                  <option value="FAIL">FAIL</option>
+                  <option value="NOT FOUND IN MOD">NOT FOUND IN MOD</option>
+                  <option value="NOT FOUND IN ONLINE SEARCH">
+                    NOT FOUND IN ONLINE SEARCH
+                  </option>
+                </select>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="all-label responsive">
+              <label for="ss">SS#</label>
+            </td>
+            <td class="responsive">
+              <div class="select-box">
+                <select id="ss" name="ss_">
+                  <option value="#" hidden>Select Option</option>
+                  <option value="PASS">PASS</option>
+                  <option value="FAIL">FAIL</option>
+                  <option value="NOT FOUND IN MOD">NOT FOUND IN MOD</option>
+                  <option value="NOT FOUND IN ONLINE SEARCH">
+                    NOT FOUND IN ONLINE SEARCH
+                  </option>
+                </select>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="all-label responsive">
+              <label for="dob">DOB:</label>
+            </td>
+            <td class="responsive">
+              <div class="select-box">
+                <select id="dob" name="dob_">
+                  <option value="#" hidden>Select Option</option>
+                  <option value="PASS">PASS</option>
+                  <option value="FAIL">FAIL</option>
+                  <option value="NOT FOUND IN MOD">NOT FOUND IN MOD</option>
+                  <option value="NOT FOUND IN ONLINE SEARCH">
+                    NOT FOUND IN ONLINE SEARCH
+                  </option>
+                </select>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="all-label responsive">
+              <label for="email">EMAIL:</label>
+            </td>
+            <td class="responsive">
+              <div class="select-box">
+                <select id="email" name="email">
+                  <option value="#" hidden>Select Option</option>
+                  <option value="PASS">PASS</option>
+                  <option value="FAIL">FAIL</option>
+                  <option value="NOT FOUND IN MOD">NOT FOUND IN MOD</option>
+                  <option value="NOT FOUND IN ONLINE SEARCH">
+                    NOT FOUND IN ONLINE SEARCH
+                  </option>
+                </select>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="all-label responsive display">
+              <label for="transaction"
+                >ALERT SUSPECTED FRAUD TRANSACTION:</label
+              >
+            </td>
+            <td class="responsive">
+              <textarea
+                name="transaction"
+                id="transaction"
+                required
+                class="text-box action"
+                placeholder="Enter Here.... "
+              ></textarea>
+            </td>
+          </tr>
+          <tr>
+            <td class="all-label responsive">
+              <label for="a-review">ACCT STATUS AT ALERT REVIEW:</label>
+            </td>
+            <td class="responsive">
+              <div class="select-box">
+                <select name="a_review" id="a-review">
+                  <option value="#" hidden>
+                    Select ACCT Status At Alert Review
+                  </option>
+                  <option value="N/A FRAUD ACCOUNT">N/A FRAUD ACCOUNT</option>
+                  <option value="ADS BYPASS">ADS BYPASS</option>
+                  <option value="CUSTOM BLOCK CP (CW 19)">
+                    CUSTOM BLOCK CP (CW 19)
+                  </option>
+                  <option value="CUSTOM BLOCK CNP (CW 18)">
+                    CUSTOM BLOCK CNP (CW 18)
+                  </option>
+                  <option value="SUSPECTED FRAUD APP/ATO">
+                    SUSPECTED FRAUD APP/ATO
+                  </option>
+                  <option value="SUSPECTED FRAUD APP/ATO & ADS BYPASS (CW03)">
+                    SUSPECTED FRAUD APP/ATO & ADS BYPASS (CW03)
+                  </option>
+                  <option
+                    value="SUSPECTED FRAUD (CW01) & SUSPECTED FRAUD APP/ATO"
+                  >
+                    SUSPECTED FRAUD (CW01) & SUSPECTED FRAUD APP/ATO
+                  </option>
+                  <option value="SUSPECTED FRAUD (CW01)">
+                    SUSPECTED FRAUD (CW01)
+                  </option>
+                  <option value="CW 34">CW 34</option>
+                  <option value="CW34 & SUSPECTED FRAUD APP/ATO">
+                    CW34 & SUSPECTED FRAUD APP/ATO
+                  </option>
+                </select>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="all-label responsive">
+              <label for="action">CASE ACTION: </label>
+            </td>
+            <td class="responsive">
+              <div class="select-box">
+                <select name="action" id="action">
+                  <option value="#" hidden>Select Case Action</option>
+                  <option value="CH TO CB">CH TO CB</option>
+                  <option value="Transaction Verified">
+                    Transaction Verified
+                  </option>
+                  <option value="Blk & Xfer">BLK & XFER</option>
+                  <option
+                    value="RESEARCH COMPLETED. NO FURTHER ACTIONS NECESSARY"
+                  >
+                    RESEARCH COMPLETED. NO FURTHER ACTIONS NECESSARY
+                  </option>
+                  <option value="FTQ">FTQ</option>
+                </select>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="all-label responsive">
+              <label for="acct">ACCT STATUS AFTER ALERT REVIEW:</label>
+            </td>
+            <td class="responsive">
+              <div class="select-box">
+                <select name="acct" id="acct">
+                  <option value="#" hidden>
+                    Select ACCT Status After Alert Review
+                  </option>
+                  <option value="N/A FRAUD ACCOUNT">N/A FRAUD ACCOUNT</option>
+                  <option value="ADS BYPASS">ADS BYPASS</option>
+                  <option value="CUSTOM BLOCK CP (CW 19)">
+                    CUSTOM BLOCK CP (CW 19)
+                  </option>
+                  <option value="CUSTOM BLOCK CNP (CW 18)">
+                    CUSTOM BLOCK CNP (CW 18)
+                  </option>
+                  <option value="SUSPECTED FRAUD APP/ATO">
+                    SUSPECTED FRAUD APP/ATO
+                  </option>
+                  <option value="SUSPECTED FRAUD APP/ATO & ADS BYPASS (CW03)">
+                    SUSPECTED FRAUD APP/ATO & ADS BYPASS (CW03)
+                  </option>
+                  <option
+                    value="SUSPECTED FRAUD (CW01) & SUSPECTED FRAUD APP/ATO"
+                  >
+                    SUSPECTED FRAUD (CW01) & SUSPECTED FRAUD APP/ATO
+                  </option>
+                  <option value="SUSPECTED FRAUD (CW01)">
+                    SUSPECTED FRAUD (CW01)
+                  </option>
+                  <option value="CW 34">CW 34</option>
+                  <option value="CW34 & SUSPECTED FRAUD APP/ATO">
+                    CW34 & SUSPECTED FRAUD APP/ATO
+                  </option>
+                </select>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="all-label responsive bottom-padding">
+              <label for="notes">ACTION TAKEN / NOTES: </label>
+            </td>
+            <td class="responsive bottom-padding">
+              <textarea
+                name="notes"
+                id="notes"
+                class="text-box action"
+                required
+                placeholder="Enter Here.... "
+              ></textarea>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <button type="submit" name="submit">SUBMIT</button>
+            </td>
+          </tr>
+        </form>
+      </table>
+    </div>
+  </body>
+</html>
